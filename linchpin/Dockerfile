@@ -69,7 +69,7 @@ RUN curl -L -o /etc/yum.repos.d/beaker-client.repo \
     fi;
 
 ### Containers should NOT run as root as a good practice
-USER ${UID}
+#USER ${UID}
 WORKDIR ${HOME}
 
 ### user name recognition at runtime w/ an arbitrary uid - for OpenShift deployments
