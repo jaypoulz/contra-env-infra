@@ -49,6 +49,7 @@ RUN curl -L -o /etc/yum.repos.d/beaker-client.repo \
         pip install -U setuptools; \
         pip install ${install_location}; \
         pip install ${install_location}[beaker]; \
+        linchpin setup beaker; \
         mkdir -p ${HOME}/bin/ && \
         chmod -R u+x ${HOME}/bin && \
         chown -R ${UID}.0 ${HOME} && \
