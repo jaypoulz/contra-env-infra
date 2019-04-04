@@ -1,12 +1,12 @@
 FROM fedora:28
 LABEL name="contrainfra/linchpin" \
       maintainer="https://github.com/CentOS-PaaS-SIG/linchpin" \
-      version="1.7.2" \
+      version="1.6.5" \
       description="LinchPin executable container running the latest Fedora release"
 
 ARG install_location='linchpin'
 ARG git_project='https://github.com/CentOS-PaaS-SIG/linchpin'
-ARG git_branch='v1.7.2'
+ARG git_branch='v1.6.5'
 
 ENV UID=1000
 ENV HOME=/linchpin/
